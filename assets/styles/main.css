@@ -13,3 +13,34 @@
 .sticky-right{
 
 }
+#primary-menu > nav{
+
+    width: 120px;
+    background-color: #ffffff;
+    top: 30%;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    /* -webkit-box-shadow: 1px 1px 1px 1px rgba(191,191,191,1); */
+    -moz-box-shadow: 1px 1px 1px 1px rgba(191,191,191,1);
+    /* box-shadow: 1px 1px 1px 1px rgba(191,191,191,1); */
+    height: 200px;
+    border: solid 3px #7AE2DE;
+}	
+#primary-menu > nav ul{
+	padding:10px 0px;
+}
+
+#primary-menu > nav ul li{
+	width: 100%;
+	padding:8px 0px;
+}
+#primary-menu > nav ul li a{
+	text-transform: uppercase;
+	color: #33363B;
+	font-weight: bold;
+}
+#primary-menu > nav ul li a:hover{
+	color: #7AE2DE;
+
+}
