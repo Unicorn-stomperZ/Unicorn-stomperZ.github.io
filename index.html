@@ -15,7 +15,7 @@
 	<meta name="author" content="Codrops" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="assets/img/unicorn-stomperz-logo.png">
-	<link rel="stylesheet" href="assets/styles/bootstrap.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/styles/normalize.min.css">
 	<link rel="stylesheet" href="assets/styles/animate.min.css">
 	<link rel="stylesheet" href="assets/styles/flickity.min.css">
@@ -25,7 +25,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#primary-menu" data-offset="0" class="relative">
 	<!--[if lt IE 8]>
 	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
@@ -37,18 +37,18 @@
 				</div>
 				<div class="primary-nav-wrapper">
 					<nav>
-						<ul class="primary-nav">
-							<li><a href="#qualite">Qualité</a></li>
-							<li><a href="#innovation">Innovation</a></li>
-							<li><a href="#articles">Titre 3</a></li>
-							<li><a href="#freebies">Titre 4</a></li>
+						<ul class="nav primary-nav">
+							<li class="nav-item"><a href="#qualite" class="nav-link">Qualité</a></li>
+							<li class="nav-item"><a href="#innovation" class="nav-link">Innovation</a></li>
+							<li class="nav-item"><a href="#articles" class="nav-link">Titre 3</a></li>
+							<li class="nav-item"><a href="#freebies" class="nav-link">Titre 4</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</div>
 	</div>
-	<header class="hero">
+	<header class="hero" id="slider">
 		<div class="carousel js-flickity">
 			<div class="carousel-cell" style="background-image: url(assets/img/hero-bg-01.jpg);">
 				<div class="hero-bg">
@@ -68,6 +68,16 @@
 
 	<section class="latest-articles alternate-bg" id="articles">
 		<div class="container">
+            <div class="primary-nav-wrapper hidden-custom sticky-right" id="primary-menu">
+                <nav >
+                    <ul class="nav primary-nav">
+                        <li class="nav-item"><a href="#qualite" class="nav-link">Qualité</a></li>
+                        <li class="nav-item"><a href="#innovation" class="nav-link">Innovation</a></li>
+                        <li class="nav-item"><a href="#articles" class="nav-link">Titre 3</a></li>
+                        <li class="nav-item"><a href="#freebies" class="nav-link">Titre 4</a></li>
+                    </ul>
+                </nav>
+            </div>
 
 			<div class="row has-top-margin">
 				<h1 class="color-black is-centered" id="qualite"> Productivité – Qualité – Responsabilité </h1>
@@ -1143,7 +1153,7 @@
 	<script src="assets/js/min/retina.min.js"></script>
 	<script src="assets/js/min/jquery.waypoints.min.js"></script>
 	<script src="assets/js/min/flickity.pkgd.min.js"></script>
-	<script src="assets/js/min/scripts-min.js"></script>
+	<script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

@@ -176,4 +176,15 @@ $(document).ready(function() {
             $(this).toggleClass('hover');
         });
     }
+
+    var navPos = $('#slider').offset().top +  $('#slider').height();
+    $(window).scroll(function(){
+        if ($(this).scrollTop() >= navPos) {
+            $('#primary-menu').removeClass('hidden-custom');
+            $('#primary-menu').addClass('visible');
+        } else {
+            $('#primary-menu').addClass('hidden-custom');
+            $('#primary-menu').removeClass('visible');
+        }
+    });
 });
