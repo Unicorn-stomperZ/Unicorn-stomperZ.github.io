@@ -1,0 +1,3 @@
+.latest-articles .has-overlay:after, .latest-articles .freebies .has-overlay:after {
+    visibility: hidden;
+}
