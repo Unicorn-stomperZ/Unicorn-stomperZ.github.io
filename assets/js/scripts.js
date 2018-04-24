@@ -200,23 +200,40 @@ function doYourStuffAssHole(){
 
     // Ensure question with some styles
     var newQuestion = document.createElement("H5");
+    newQuestion.setAttribute('id', question);
     newQuestion.appendChild(document.createTextNode(question));
 
     // Ensure answer with some styles
     var newAnswer = document.createElement("P");
-    newAnswer.appendChild(document.createTextNode(answer));
+    var remove = document.createElement("U");
+    remove.setAttribute('onclick', 'removeThisBullShit('+question+')');
+    remove.appendChild(document.createTextNode("(Supprimer)"));
+    newAnswer.appendChild(remove);
+    newAnswer.appendChild(document.createTextNode(" "+answer));
 
     // Append to something
     processBitch("list", newQuestion, newAnswer);
-
 }
 
 function processBitch(target, question, answer){
 
+    // Create ensemble div
+    var ensemble = document.createElement("DIV");
+    ensemble.setAttribute("class", "ensemble");
+    ensemble.appendChild(question);
+    ensemble.appendChild(answer);
+
     // Add to target block question & answer
-    $("#"+target).append(question,answer);
+    $("#"+target).append(ensemble);
 
     // Clean form
     $("#question").val("");
     $("#answer").val("");
+}
+
+function removeThisBullShit(id){
+
+    // Get element then remove it
+    var toDel = document.getElementById(id);
+    toDel.parentNode.remove();
 }
