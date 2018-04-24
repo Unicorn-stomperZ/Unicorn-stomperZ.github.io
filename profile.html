@@ -14,6 +14,7 @@
     <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
     <meta name="author" content="Codrops" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/png" href="assets/img/unicorn-stomperz-logo.png">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/normalize.min.css">
@@ -30,28 +31,10 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<div class="container-fluid">
-    <div class="row">
-        <div class="header-nav-wrapper">
-            <div class="logo">
-                <a href="/index.html"></a>
-            </div>
-            <div class="primary-nav-wrapper">
-                <nav>
-                    <ul class="nav primary-nav">
-                        <li class="nav-item"><a href="#qualite" class="nav-link">Nos services</a></li>
-                        <li class="nav-item"><a href="#teamwork" class="nav-link">Nous trouver</a></li>
-                        <li class="nav-item"><a href="#innovation" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a href="#engagement" class="nav-link">Espace Personnel</a></li>
-                    
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</div>
 
-<section class="latest-articles alternate-bg" id="articles">
+<div w3-include-html="menu.html"></div>
+
+<section class="latest-articles alternate-bg" id="profile-form">
     <div class="container">
         <h1>Gestion de mon profil "Tout pour toutou !"</h1>
     </div>
@@ -118,3 +101,36 @@
 </body>
 
 </html>
+
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    }
+</script>
+<script>
+    includeHTML();
+</script>
