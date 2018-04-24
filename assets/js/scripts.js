@@ -188,6 +188,25 @@ $(document).ready(function() {
         }
     });
 
+
+    /***************** disconnected ******************/
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var connected = getParameterByName('connected');
+
+
+    document.getElementById('toto').addEventListener('click', function(){
+        (connected !== null)  ? location.href = location.href.replace('connected', 'deconnected') : "";
+    });
 });
 
 /***************** Thom is here ********************************/
