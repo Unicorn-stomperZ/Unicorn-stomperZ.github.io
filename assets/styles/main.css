@@ -30,7 +30,9 @@
 #primary-menu > nav ul{
 	padding:10px 0px;
 }
-
+.menu nav{
+    margin-right: 0;
+}
 #primary-menu > nav ul li{
 	width: 100%;
 	padding:8px 0px;
@@ -52,6 +54,7 @@
 }
 .field_connect {
     margin: 25px;
+}
 .myaddress .title-address {
     margin-bottom: 10px;
 }
