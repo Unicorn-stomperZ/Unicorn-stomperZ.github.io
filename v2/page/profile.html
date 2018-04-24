@@ -37,43 +37,91 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div w3-include-html="menu.html"></div>
+<div class="menu" w3-include-html="./menu.html"></div>
 
-<section class="latest-articles alternate-bg" id="product-page">
+<section class="latest-articles alternate-bg" id="profile-form">
     <div class="container">
-        <h1 class="product-title">Prestation gardiennage</h1>
-        
-        <div class="product-images">
-            <ul>
-                <li class="product-image-main"><img src="//dummyimage.com/300x300"/></li>
-                <li><img src="//dummyimage.com/300x300"/></li>
-                <li><img src="//dummyimage.com/300x300"/></li>
-                <li><img src="//dummyimage.com/300x300"/></li>
-                <li><img src="//dummyimage.com/300x300"/></li>
-            </ul>
-        </div>
-        
-        <div class="product-description">
-            <p class="product-subtitle">La prestation idéale pour un toutou détendu !</p>
-            
-            <p class="product-price">A partir de 50€/h</p>
-            
-            <p class="product-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum arcu id purus maximus semper. Vivamus scelerisque ullamcorper est eget fringilla. Ut tempus venenatis velit aliquam viverra. Sed consectetur purus nec lorem aliquam, non hendrerit nibh tincidunt. Morbi rutrum suscipit tortor sed feugiat. Phasellus nisi erat, pretium nec tortor a, mattis ullamcorper purus. Proin augue lacus, venenatis et iaculis quis, scelerisque ac metus. Curabitur sapien turpis, convallis in facilisis et, pharetra sit amet ex. Maecenas tincidunt euismod nisi sed bibendum. Curabitur tristique tortor a magna vehicula, ac tempus libero ullamcorper. Suspendisse consectetur dui a est porta tincidunt. Sed eu ante ornare, rhoncus purus sed, dictum neque.
-                <br/>
-                Integer non diam id felis semper egestas. Nullam mauris dui, accumsan vitae elit in, aliquam tincidunt libero. Vestibulum rutrum eleifend metus, nec porttitor nunc lobortis id. Praesent sapien sem, pretium vel lectus nec, fringilla luctus nisi. In eu sapien commodo metus feugiat dictum. Ut vitae tincidunt lacus. Cras imperdiet magna vitae nisi pretium rhoncus. Duis imperdiet neque a ultrices porttitor. Nullam bibendum augue dolor, eu pharetra urna aliquam iaculis. In ac nisi non lorem dapibus sodales non eget lacus. Cras urna elit, tempus eget lorem eu, mattis suscipit est. Fusce eget libero ac magna condimentum tempor nec at nulla. Etiam eu dui vitae elit blandit molestie.
-                <br/>
-                Duis bibendum ante tellus. Ut lorem neque, feugiat id magna sit amet, egestas egestas nunc. In in nibh libero. Duis sagittis commodo justo, sit amet suscipit enim cursus vel. Aenean condimentum semper eros, id consequat purus interdum eget. Vivamus eleifend libero et lectus pulvinar efficitur. Vivamus sed ipsum et odio auctor malesuada.
-                <br/>
-                3 paragraphes, 264 mots, 1767 caractères de Lorem Ipsum généré
-            </p>
-        </div>
+        <h1>Gestion de mon profil "Tout pour toutou !"</h1>
+
+        <form method="POST" action="#">
+            <p>Vos informations :</p>
+            <label>Nom :</label>
+            <input type="text" placeholder="Votre nom..."/>
+            <label>Prénom :</label>
+            <input type="text" placeholder="Votre prénom..."/>
+            <label>Genre</label>
+            <select>
+                <option>Homme</option>
+                <option>Femme</option>
+                <option>Autre</option>
+            </select>
+            <label>Âge :</label>
+            <input type="number" min="18" max="120" value="18"/>
+
+            <hr/>
+
+            <p>Vos coordonnées :</p>
+            <label>Adresse :</label>
+            <input type="text" placeholder="Votre adresse..."/>
+            <label>Code Postal :</label>
+            <input type="number" min="00000" max="99999" value="75000"/>
+            <label>ville :</label>
+            <input type="text" placeholder="Votre ville..."/>
+
+            <hr/>
+
+            <p>Changer de mot de passe :</p>
+            <label>Ancien mot de passe :</label>
+            <input type="password" placeholder="Votre ancien mot de passe..."/>
+            <label>Nouveau mot de passe :</label>
+            <input type="password" placeholder="Votre nouveau mot de passe..."/>
+            <label>Répétez le nouveau mot de passe :</label>
+            <input type="password" placeholder="Répétez le nouveau mot de passe..."/>
+
+            <hr/>
+
+            <p>Linkez-vous</p>
+            <label>Linkedin</label>
+            <input type="url" placeholder="https://"/>
+            <label>Instagram</label>
+            <input type="url" placeholder="https://"/>
+            <label>GooglePlus</label>
+            <input type="url" placeholder="https://"/>
+
+            <hr/>
+
+            <p>Certifiez votre compte</p>
+
+            <span>Vous pouvez, si vous le souhaitez, certifiez votre compte comme étant un profil authentique.</span>
+            <br><br>
+
+            <div class="row">
+                <div style="padding-left:25px">
+                    <img src="../../../assets/img/cni.jpeg" alt="CNI" style="width:320px">
+                </div>
+                <div style="padding-left:25px">
+                    <h5>Je vérifie mon compte grâce à :</h5>
+                    <input type="radio" name="cert"> Carte identité
+                    <input type="radio" name="cert"> Carte d'allocation familiale
+                    <input type="radio" name="cert"> Carte UGC Ciné Cité
+                    <input type="radio" name="cert"> Carte Macdo
+                    <br><br>
+                    <h5>Télécharger le justificatif :</h5>
+                    <br><br>
+                    <input type="file">
+                </div>
+            </div>
+
+            <br>
+
+            <input type="submit"/>
+        </form>
     </div>
 </section>
 
 
 <footer>
-    <a href="../../../assets/cgu.html">CGU</a>
+    <a href="./cgu.html">CGU</a>
 </footer>
 
 <!-- JS CDNs -->
