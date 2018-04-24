@@ -187,8 +187,30 @@ $(document).ready(function() {
             $('#primary-menu').removeClass('visible');
         }
     });
-
 });
+    /***************** disconnected ******************/
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+window.onload = function(){
+    var connected = getParameterByName('connected');
+
+    /*document.getElementById('toto').addEventListener('click', function(){
+     (connected !== null)  ? location.href = location.href.replace('connected', 'deconnected') : "";
+     });*/
+
+    if (connected !== null) {
+        $(document.getElementById('connect_input')).text('Déconnexion');
+        $(document.getElementById('connect_input')).setAttribute('href', 'index.html?deconnected=0');
+    }
+}
+
 
 /***************** Thom is here ********************************/
 
@@ -220,3 +242,4 @@ function processBitch(target, question, answer){
     $("#question").val("");
     $("#answer").val("");
 }
+
