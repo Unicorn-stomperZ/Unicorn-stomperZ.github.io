@@ -187,4 +187,11 @@ $(document).ready(function() {
             $('#primary-menu').removeClass('visible');
         }
     });
+
 });
+
+/***************** Thom is here ********************************/
+
+function doYourStuffAssHole(){
+    
+}
