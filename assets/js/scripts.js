@@ -194,4 +194,29 @@ $(document).ready(function() {
 
 function doYourStuffAssHole(){
 
+    // Get elements
+    var question = document.getElementById("question").value;
+    var answer = document.getElementById("answer").value;
+
+    // Ensure question with some styles
+    var newQuestion = document.createElement("H5");
+    newQuestion.appendChild(document.createTextNode(question));
+
+    // Ensure answer with some styles
+    var newAnswer = document.createElement("P");
+    newAnswer.appendChild(document.createTextNode(answer));
+
+    // Append to something
+    processBitch("list", newQuestion, newAnswer);
+
+}
+
+function processBitch(target, question, answer){
+
+    // Add to target block question & answer
+    $("#"+target).append(question,answer);
+
+    // Clean form
+    $("#question").val("");
+    $("#answer").val("");
 }
