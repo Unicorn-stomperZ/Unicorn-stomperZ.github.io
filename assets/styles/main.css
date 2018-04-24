@@ -13,9 +13,6 @@ body{
 .visible{
     display: block;
 }
-.sticky-right{
-
-}
 #primary-menu > nav{
 
     width: 185px;
