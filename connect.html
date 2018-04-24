@@ -1,102 +1,65 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en-US">
-<!--<![endif]-->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Charte collaborative</title>
-    <meta name="description" content="A free html template with Sketch design made with Bootstrap">
-    <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
-    <meta name="author" content="Codrops" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="assets/img/unicorn-stomperz-logo.png">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles/normalize.min.css">
-    <link rel="stylesheet" href="assets/styles/animate.min.css">
-    <link rel="stylesheet" href="assets/styles/flickity.min.css">
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/OVERRIDE.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <!-- Website CSS style -->
+    <link href="css/inscription.css" rel="stylesheet">
+
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <title>Admin</title>
 </head>
+<body>
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <h4>Inscrivez vous.</h4>
+            <form class="" method="post" action="#">
 
-<body data-spy="scroll" data-target="#primary-menu" data-offset="0" class="relative">
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-<div class="menu" w3-include-html="menu.html"></div>
+                <div class="form-group">
+                    <label for="lastname" class="cols-sm-2 control-label">Nom</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="lastname" id="lastname"  placeholder="Username"/>
+                        </div>
+                    </div>
+                </div>
 
-<div class="form_connect">
-    <div class="field_connect">
-        <label>Username</label>
-        <input type="text">
-    </div>
-    <div>
-        <label>Password</label>
-        <input type="password">
+                <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Mot de passe</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group ">
+                    <a href="/index.html?connected=1" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Enregister</a>
+                </div>
+
+            </form>
+        </div>
     </div>
 </div>
 
-
-<footer>
-    <a href="/cgu.html">CGU</a>
-</footer>
-
-<!-- JS CDNs -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-<script src="https://vjs.zencdn.net/5.4.6/video.min.js"></script>
-<!-- jQuery local fallback -->
-<script>
-    window.jQuery || document.write('<script src="assets/js/min/jquery-1.11.2.min.js"><\/script>')
-</script>
-<!-- JS Locals -->
-<script src="assets/js/min/bootstrap.min.js"></script>
-<script src="assets/js/min/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-<script src="assets/js/min/retina.min.js"></script>
-<script src="assets/js/min/jquery.waypoints.min.js"></script>
-<script src="assets/js/min/flickity.pkgd.min.js"></script>
-<script src="assets/js/scripts.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>
-
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                /*make an HTTP request using the attribute value as the file name:*/
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        /*remove the attribute, and call this function once more:*/
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /*exit the function:*/
-                return;
-            }
-        }
-    }
-</script>
-<script>
-    includeHTML();
-</script>
