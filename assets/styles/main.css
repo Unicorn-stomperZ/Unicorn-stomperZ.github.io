@@ -52,4 +52,12 @@
 }
 .field_connect {
     margin: 25px;
+.myaddress .title-address {
+    margin-bottom: 10px;
+}
+.myaddress .submit {
+    width: 100%;
+}
+.myaddress .submit i{
+    margin-left: 20px;
 }
