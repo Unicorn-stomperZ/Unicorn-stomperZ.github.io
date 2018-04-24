@@ -44,3 +44,12 @@
 	color: #7AE2DE;
 
 }
+.form_connect{
+    margin: 150px auto;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.field_connect {
+    margin: 25px;
+}
