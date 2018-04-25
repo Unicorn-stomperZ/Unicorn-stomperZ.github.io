@@ -64,3 +64,34 @@ body{
 .myaddress .submit i{
     margin-left: 20px;
 }
+.list-animaux img { 
+    max-width: 100%;
+}
+.list-animaux .animal-br {
+    display: block;
+}
+.description-animal {
+    text-align: center;
+}
+.description-animal.void {
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.description-animal.void:hover{
+    background-color: #bbb
+}
+.description-animal.void i{
+        align-items: center;
+        font-size: 6em;
+}
+.addToutou {
+    display: none;
+}
+span.noAvatar {
+    padding-top: 15px;
+    text-align: justify;
+    display: block;
+}

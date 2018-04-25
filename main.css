@@ -127,3 +127,39 @@
 .red-alert .stock-circle {
     background: url('assets/img/red_circle.png') no-repeat center;
 }
+
+.package-section h1{
+    margin-top: 50px;
+    color: #00aced;
+}
+
+.package-section h2 {
+    color: black;
+    padding: 0;
+}
+
+.pack-price {
+    font-weight: bold;
+}
+
+.pack-discount {
+    color: #FF5050;
+}
+
+.pack-element {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.pack-element-title {
+    font-weight: bold;
+}
+
+.pack-element-price-rated {
+    text-decoration: line-through;
+}
+
+.pack-final-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
