@@ -4203,3 +4203,13 @@ span.noAvatar {
     text-align: justify;
     display: block;
 }
+.total_panier{
+    font-size: 33px;
+}
+.thumb_panier{
+    height: 75px;
+    width: 150px;
+}
+.logo_cash{
+    display: inline-block;
+}
