@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html class="no-js" lang="en-US">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Charte collaborative</title>
+    <meta name="description" content="A free html template with Sketch design made with Bootstrap">
+    <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
+    <meta name="author" content="Codrops" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- import de css accueil-->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- import de css inconu -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<div class="wrapper-menu-backoffice" w3-include-html="./menu-backoffice.html"></div>
+<body>
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <a href="../v2/index.html" class="btn btn-primary">Retour</a>
+            <h3>Gestion utilisateur - attribution des droits.</h3>
+            <form class="" method="post" action="#">
+                <div class="form-group">
+                    <label for="userList" class="cols-sm-2 control-label">Utilisateurs : </label>
+                    <div class="cols-sm-10">
+                        <select class="form-control" name="userList" id="userList" >
+                            <option selected="selected">Sélectionner un utilisateur</option>
+                            <option value="Thibaudet">Thibaudet Thomas</option>
+                            <option value="Maligne">Jean Philippe Maligne</option>
+                            <option value="Mabillote">Alexis Mabillote</option>
+                            <option value="Guerinot">Nicolas Guerinot</option>
+                            <option value="Aissam">Aissam Abaou</option>
+                            <option value="grevin">Nicolas Grevin</option>
+                        </select>
+                    </div>
+                </div>
+
+                    <div class="form-group">
+                        <label for="userStatus" class="cols-sm-2 control-label">Droits : </label>
+                        <div class="cols-sm-10">
+                            <select class="form-control" name="userStatus" id="userStatus" >
+                                <option selected="selected">Sélectionner un droit</option>
+                                <option value="user">User</option>
+                                <option value="moderateur">Modérateur</option>
+                                <option value="marketting">Marketting</option>
+                                <option value="vente">Vente</option>
+                                <option value="admin">Admin</option>
+                                <option value="super_admin">Super Admin</option>
+                            </select>
+                        </div>
+                    </div>
+
+                <div class="form-group ">
+                    <a href="#" id="button" class="btn btn-info btn-lg btn-block login-button">Enregister</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    }
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    includeHTML();
+</script>
+</body>
+</html>

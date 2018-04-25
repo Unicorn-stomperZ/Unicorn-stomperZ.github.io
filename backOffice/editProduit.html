@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html class="no-js" lang="en-US">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Charte collaborative</title>
+    <meta name="description" content="A free html template with Sketch design made with Bootstrap">
+    <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
+    <meta name="author" content="Codrops" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- import de css accueil-->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- import de css inconu -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+<body class="body-backoffice">
+<div class="wrapper-menu-backoffice" w3-include-html="./menu-backoffice.html"></div>
+
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <h4>Modifier le produit <strong>N°1</strong> - <strong>Massage pour chien</strong></h4>
+            <form class="form-horizontal" method="post" action="#" enctype="multipart/form-data" >
+
+                <div class="form-group">
+                    <label for="idProduit" class="col-sm-2 control-label">Id</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="idProduit" id="idProduit" value="1" readonly placeholder="Saisissez le libellé du produit."/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nomProduit" class="col-sm-2 control-label">Libellé</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="nomProduit" id="nomProduit" value="Massage pour chien" placeholder="Saisissez le libellé du produit."/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description" class="col-sm-2 control-label">Description</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <textarea class="form-control" name="description" id="description" rows="5">
+                                Confiez votre boule de poile à l'un de nos dog-sitter mandatés.
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantite" class="col-sm-2 control-label">Quantité</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="quantite" id="quantite" value="154" placeholder="Renseigner une quantité"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prix" class="col-sm-2 control-label">Prix</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="prix" id="prix" value="5,25€" placeholder="Renseigner un prix"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="categorie" class="col-sm-2 control-label">Catégorie</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <select class="form-control" name="categorie" id="categorie" >
+                                <option selected="selected" >Sélectionner une catégorie</option>
+                                <option value="Cat1">Cat1</option>
+                                <option value="Cat2">Cat2</option>
+                                <option value="Cat3">Cat3</option>
+                                <option value="Cat4">Cat4</option>
+                                <option value="Cat5">Cat5</option>
+                                <option value="Cat6">Cat6</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="disponibilite" class="col-sm-2 control-label">Disponibilité</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="checkbox" class="form-control" name="disponibilite" id="disponibilite" checked />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="image" class="col-sm-2 control-label">Photo du produit</label>
+                    <div class="col-sm-10">
+                        <img src="img/toutoumassage.jpeg" width="100px" height="100px" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                <label for="image" class="col-sm-2 control-label">Modifier l'image</label>
+                <div class="col-sm-10">
+                    <div class="input-group">
+                        <input type="file" class="form-control" name="image" id="image"  placeholder="Choisir une photo pour le produit"/>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="form-group ">
+                    <button type="button" id="button" class="btn btn-info btn-lg btn-block login-button">Valider la modification</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    //Ma fonction pour faire apparaitre le formulaire de Login lorsqu'on est en page d'accueil !!!.
+    $(function(e){
+        //alert(window.location.href);
+    });
+</script>
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    }
+</script>
+<script>
+    includeHTML();
+</script>
+</body>
+</html>
