@@ -31,6 +31,7 @@
 
 <body data-spy="scroll" data-target="#primary-menu" data-offset="0" class="relative">
 
+
 <div class="menu" w3-include-html="./menu.html"></div>
 
 <section class="latest-articles alternate-bg" id="profile-form">
@@ -106,6 +107,34 @@
                 </div>
             </div>
 
+
+                <p>Mes adresses</p>
+                    <div class="form-group">
+                        <div class="title-address">
+                            <label class="cols-sm-2 control-label">Adresse n°1</label>
+                            <i class="fa fa-plus pull-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <input type="number" class="form-control" name="addrNum" id="addrNum"  placeholder="Numero de voie"/>
+                            </div>
+                            <div class="input-group">
+                                <select class="form-control" name="addrType" id="addrType">
+                                    <option value="default">Choisissez votre type de voie</option>
+                                    <option value="Allee">Allée</option>
+                                    <option value="Rue">Rue</option>
+                                    <option value="Avenue">Avenue</option>
+                                    <option value="Chemin">Chemin</option>
+                                    <option value="Trou">Trou de Hobbit</option>
+                                    <option value="Placard">Placard sous l'escalier</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="addrName" id="addrName" placeholder="Nom de la voie"/>
+                            </div>
+                        </div>
+                    </div>
+                    <a type="submit" class="btn btn-primary submit" href="../index.html">Ajouter mon adresse <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
             <br>
 
             <input type="submit"/>
