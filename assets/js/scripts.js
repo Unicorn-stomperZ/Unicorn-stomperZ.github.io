@@ -177,7 +177,7 @@ $(document).ready(function() {
         });
     }
 
-    var navPos = $('#slider').offset().top +  $('#slider').height();
+    /*var navPos = $('#slider').offset().top +  $('#slider').height();
     $(window).scroll(function(){
         if ($(this).scrollTop() >= navPos) {
             $('#primary-menu').removeClass('hidden-custom');
@@ -185,6 +185,33 @@ $(document).ready(function() {
         } else {
             $('#primary-menu').addClass('hidden-custom');
             $('#primary-menu').removeClass('visible');
+        }
+    });*/
+    
+    /***************** Add a new product comment ********************************/
+    
+    $('.user-comment-form input').on('click', function() {
+        var $first_comment = $('.user-comment').first();
+        var $user_comment = $('.user-comment-form textarea').val();
+        
+        if(typeof $($first_comment).val() !== 'undefined') {
+            $($first_comment).prepend('' +
+                '<div class="user-comment">' +
+                '<p><span>Utilisateur :</span> Anonyme</p>' +
+                '<p><span>Son animal :</span>Spookie, le chien fantôme (non renseigné)</p>' +
+                '<p><span>Le 30 Avril 2018</span></p>' +
+                '<p>'+ $user_comment +'</p>' +
+                '</div>' +
+                '<hr>');
+        } else {
+            $('.user-comment-form').before('' +
+                '<div class="user-comment">' +
+                '<p><span>Utilisateur :</span> Anonyme</p>' +
+                '<p><span>Son animal :</span>Spookie, le chien fantôme (non renseigné)</p>' +
+                '<p><span>Le 30 Avril 2018</span></p>' +
+                '<p>'+ $user_comment +'</p>' +
+                '</div>' +
+                '<hr>');
         }
     });
 });
@@ -242,4 +269,3 @@ function processBitch(target, question, answer){
     $("#question").val("");
     $("#answer").val("");
 }
-
