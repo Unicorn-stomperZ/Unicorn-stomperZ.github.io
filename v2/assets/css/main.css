@@ -227,3 +227,9 @@ body{
     width: 100% !important;
     height:auto !important;
 }
+
+footer{
+    height: 50px;
+    background-color: black;
+    padding: 1em;
+}
