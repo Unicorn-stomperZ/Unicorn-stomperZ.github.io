@@ -1777,7 +1777,8 @@ input, textarea {
 .header-nav-wrapper .primary-nav-wrapper {
     float: right;
     -webkit-transition: all 300ms;
-    transition: all 300ms
+    transition: all 300ms;
+    width: 100%;
 }
 
 .header-nav-wrapper nav {
@@ -3858,7 +3859,7 @@ footer .footer-nav ul.footer-secondary-nav li {
     }
 
     footer {
-        height: 50px;
+        height: 242px!important;
         width: 100%;
         background-color: #33363B;
     }
@@ -3966,6 +3967,7 @@ footer .footer-nav ul.footer-secondary-nav li {
 }
 .header-nav-wrapper nav{
     padding: 0;
+    width: 100%;
 }
 .wp1{
     color: black;
@@ -4091,8 +4093,82 @@ footer .footer-nav ul.footer-secondary-nav li {
     height:auto !important;
 }
 
+.product-user-interaction h1 {
+    color: #00aced;
+}
+
+.user-comment {
+    margin-top: 40px;
+}
+
+.user-comment p {
+    margin: 0;
+    padding: 0;
+}
+
+.user-comment p span {
+    font-weight: bold;
+}
+
+.user-comment-form {
+    width: 100%;
+}
+
+.user-comment-form p {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.user-comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+
+.user-comment-form input[type="submit"] {
+    display: block;
+    width: 200px;
+    margin: -20px auto 10px;
+    background-color: #00aced;
+    color: white;
+}
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+    
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+    display:inline-block;
+    
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+    font-size:2.5em; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+    color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+    color:#FF912C;
+}
+
+
+/*
+*
+*/
+
 footer{
-    height: 50px;
+    height: 242px!important;
     background-color: black;
     padding: 1em;
 }
@@ -4234,4 +4310,32 @@ ul.list-group li a:hover {
 
 .logo_cash{
     display: inline-block;
+}
+.content-panier {
+    margin-top: 127px;
+}
+
+.entete{
+    width: 100%;
+    height: 100px;
+}
+
+.entete h1{
+    float: left;
+
+}
+
+.entete button{
+    margin-top: 1em;
+    float: right;
+    padding: 10px 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+    -ms-transition: ease .5s;
+    -o-transition: ease .5s;
+    transition: ease .5s;
+
 }
