@@ -1,0 +1,133 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Website CSS style -->
+    <link href="css/produits.css" rel="stylesheet">
+
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <title>Modification de fiche produit</title>
+</head>
+<body>
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <h4>Ajouter un produit</h4>
+            <form class="form-horizontal" method="post" action="#" enctype="multipart/form-data" >
+
+                <div class="form-group">
+                    <label for="nomProduit" class="col-sm-2 control-label">Libellé</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="nomProduit" id="nomProduit" value="" placeholder="Saisissez le libellé du produit."/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description" class="col-sm-2 control-label">Description</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <textarea class="form-control" name="description" id="description" rows="5">
+
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantite" class="col-sm-2 control-label">Quantité</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="quantite" id="quantite" value="" placeholder="Renseigner une quantité"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prix" class="col-sm-2 control-label">Prix</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="prix" id="prix" value="" placeholder="Renseigner un prix"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="categorie" class="col-sm-2 control-label">Catégorie</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <select class="form-control" name="categorie" id="categorie" >
+                                <option selected="selected" >Sélectionner une catégorie</option>
+                                <option value="Cat1">Cat1</option>
+                                <option value="Cat2">Cat2</option>
+                                <option value="Cat3">Cat3</option>
+                                <option value="Cat4">Cat4</option>
+                                <option value="Cat5">Cat5</option>
+                                <option value="Cat6">Cat6</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="disponibilite" class="col-sm-2 control-label">Disponibilité</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="checkbox" class="form-control" name="disponibilite" id="disponibilite" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="image" class="col-sm-2 control-label">Ajouter une image</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="file" class="form-control" name="image" id="image"  placeholder="Choisir une photo pour le produit"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="image" class="col-sm-2 control-label">Photo du produit</label>
+                    <div class="col-sm-10">
+                        <h5>Ici la photo du produit !! </h5>
+                        <!-- <img src="img/toutoumassage.jpeg" width="100px" height="100px" > -->
+                    </div>
+                </div>
+
+                <div class="form-group ">
+                    <button type="button" id="button" class="btn btn-info btn-lg btn-block login-button">Ajouter le produit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    //Ma fonction pour faire apparaitre le formulaire de Login lorsqu'on est en page d'accueil !!!.
+    $(function(e){
+        //alert(window.location.href);
+    });
+</script>
+</body>
+</html>

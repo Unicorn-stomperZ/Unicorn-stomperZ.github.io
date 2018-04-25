@@ -13,7 +13,7 @@
 body, html{
     height: 100%;
     background-repeat: no-repeat;
-   /* background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg); */
+    /*background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg); */
     font-family: 'Oxygen', sans-serif;
     background-size: cover;
 }
@@ -71,7 +71,8 @@ input::-webkit-input-placeholder {
     border: 1px solid #ccc;
     margin-top: 28px;
     padding: 6px 12px;
-    color: #666;
+    /*color: #666;*/
+    color: #FFF;
     text-shadow: 0 1px #fff;
     cursor: pointer;
     -moz-border-radius: 3px 3px;
@@ -80,8 +81,7 @@ input::-webkit-input-placeholder {
     -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
     -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
     box-shadow: 0 1px #fff inset, 0 1px #ddd;
-    /*
-    background: #f5f5f5;
+    /* background: #f5f5f5;
     background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
     background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
@@ -94,7 +94,7 @@ input::-webkit-input-placeholder {
 .main-center{
     margin-top: 30px;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 600px;
     padding: 10px 40px;
     background:#009edf;
     color: #FFF;
@@ -102,6 +102,7 @@ input::-webkit-input-placeholder {
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    /* border: 2px dotted red; */
 
 }
 span.input-group-addon i {

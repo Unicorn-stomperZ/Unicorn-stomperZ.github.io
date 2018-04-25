@@ -1,8 +1,10 @@
-<!doctype html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<html class="no-js" lang="en-US">
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,39 +18,29 @@
 
     <!-- font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    <!-- Website CSS style -->
     <!-- import de css accueil-->
     <link rel="stylesheet" href="../assets/css/main.css">
 
     <!-- import de css inconu -->
     <link rel="stylesheet" href="../assets/css/styles.css">
-
+    <!-- <link href="../assets/css/user_role_admin.css" rel="stylesheet"> -->
     <link href="../assets/css/produits.css" rel="stylesheet">
 
+    <title>Ajouter un produit</title>
 </head>
-<body class="body-backoffice">
-<div class="wrapper-menu-backoffice" w3-include-html="./menu-backoffice.html"></div>
-
+<body>
 <div class="container">
     <div class="row main">
         <div class="main-login main-center">
-            <h4>Modifier le produit <strong>N°1</strong> - <strong>Massage pour chien</strong></h4>
+            <h4>Ajouter un produit</h4>
             <form class="form-horizontal" method="post" action="#" enctype="multipart/form-data" >
-
-                <div class="form-group">
-                    <label for="idProduit" class="col-sm-2 control-label">Id</label>
-                    <div class="col-sm-10">
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="idProduit" id="idProduit" value="1" readonly placeholder="Saisissez le libellé du produit."/>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="form-group">
                     <label for="nomProduit" class="col-sm-2 control-label">Libellé</label>
                     <div class="col-sm-10">
                         <div class="input-group">
-                            <input type="text" class="form-control" name="nomProduit" id="nomProduit" value="Massage pour chien" placeholder="Saisissez le libellé du produit."/>
+                            <input type="text" class="form-control" name="nomProduit" id="nomProduit" value="" placeholder="Saisissez le libellé du produit."/>
                         </div>
                     </div>
                 </div>
@@ -58,7 +50,7 @@
                     <div class="col-sm-10">
                         <div class="input-group">
                             <textarea class="form-control" name="description" id="description" rows="5">
-                                Confiez votre boule de poile à l'un de nos dog-sitter mandatés.
+
                             </textarea>
                         </div>
                     </div>
@@ -68,7 +60,7 @@
                     <label for="quantite" class="col-sm-2 control-label">Quantité</label>
                     <div class="col-sm-10">
                         <div class="input-group">
-                            <input type="text" class="form-control" name="quantite" id="quantite" value="154" placeholder="Renseigner une quantité"/>
+                            <input type="text" class="form-control" name="quantite" id="quantite" value="" placeholder="Renseigner une quantité"/>
                         </div>
                     </div>
                 </div>
@@ -77,7 +69,7 @@
                     <label for="prix" class="col-sm-2 control-label">Prix</label>
                     <div class="col-sm-10">
                         <div class="input-group">
-                            <input type="text" class="form-control" name="prix" id="prix" value="5,25€" placeholder="Renseigner un prix"/>
+                            <input type="text" class="form-control" name="prix" id="prix" value="" placeholder="Renseigner un prix"/>
                         </div>
                     </div>
                 </div>
@@ -101,34 +93,32 @@
 
                 <div class="form-group">
                     <label for="disponibilite" class="col-sm-2 control-label">Disponibilité</label>
-                    <div class="col-sm-2">
+                    <div class="col-sm-10">
                         <div class="input-group">
-                            <input type="checkbox" class="form-control" name="disponibilite" id="disponibilite" checked />
+                            <input type="checkbox" class="form-control" name="disponibilite" id="disponibilite" />
                         </div>
                     </div>
-                    <div class="col-sm-8">
+                </div>
+
+                <div class="form-group">
+                    <label for="image" class="col-sm-2 control-label">Ajouter une image</label>
+                    <div class="col-sm-10">
+                        <div class="input-group">
+                            <input type="file" class="form-control" name="image" id="image"  placeholder="Choisir une photo pour le produit"/>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="image" class="col-sm-2 control-label">Photo du produit</label>
                     <div class="col-sm-10">
-                        <img src="../assets/img/toutoumassage.jpeg" width="100px" height="100px" >
+                        <h5>Ici la photo du produit !! </h5>
+                        <!-- <img src="img/toutoumassage.jpeg" width="100px" height="100px" > -->
                     </div>
                 </div>
-
-                <div class="form-group">
-                <label for="image" class="col-sm-2 control-label">Modifier l'image</label>
-                <div class="col-sm-10">
-                    <div class="input-group">
-                        <input type="file" class="form-control" name="image" id="image"  placeholder="Choisir une photo pour le produit"/>
-                    </div>
-                </div>
-                </div>
-
 
                 <div class="form-group ">
-                    <button type="button" id="button" class="btn btn-info btn-lg btn-block login-button">Valider la modification</button>
+                    <button type="button" id="button" class="btn btn-info btn-lg btn-block login-button">Ajouter le produit</button>
                 </div>
 
             </form>
@@ -146,38 +136,6 @@
     $(function(e){
         //alert(window.location.href);
     });
-</script>
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                /*make an HTTP request using the attribute value as the file name:*/
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        /*remove the attribute, and call this function once more:*/
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /*exit the function:*/
-                return;
-            }
-        }
-    }
-</script>
-<script>
-    includeHTML();
 </script>
 </body>
 </html>
