@@ -3858,7 +3858,7 @@ footer .footer-nav ul.footer-secondary-nav li {
     }
 
     footer {
-        height: 242px;
+        height: 242px!important;
         width: 100%;
         background-color: #33363B;
     }
