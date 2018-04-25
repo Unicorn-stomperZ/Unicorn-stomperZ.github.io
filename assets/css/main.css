@@ -4200,7 +4200,16 @@ span.noAvatar {
     text-align: justify;
     display: block;
 }
-h1.titleCategory{
+.total_panier{
+    font-size: 33px;
+}
+.thumb_panier{
+    height: 75px;
+    width: 150px;
+}
+.logo_cash{
+    display: inline-block;
+}h1.titleCategory{
     margin-bottom: 1em;
 }
 
@@ -4212,6 +4221,17 @@ ul.list-group li a{
     -o-transition: ease .75s;
     transition: ease .75s;
 }
-ul.list-group li a:hover{
+ul.list-group li a:hover {
     color: lime;
+}
+.total_panier{
+    font-size: 33px;
+}
+.thumb_panier{
+    height: 75px;
+    width: 150px;
+}
+
+.logo_cash{
+    display: inline-block;
 }
