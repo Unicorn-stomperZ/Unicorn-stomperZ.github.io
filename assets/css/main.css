@@ -1619,7 +1619,8 @@ body.vjs-full-window {
 }
 
 body {
-    overflow-x: hidden
+    overflow-x: hidden;
+    padding-top: 67px!important;
 }
 
 html, body {
@@ -4214,4 +4215,10 @@ ul.list-group li a{
 }
 ul.list-group li a:hover{
     color: lime;
+}
+
+.imgSuprimerCompte{
+    width: 50px;
+    height: auto;
+    float: right;
 }
