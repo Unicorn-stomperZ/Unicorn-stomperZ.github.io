@@ -1,0 +1,182 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Garderie toutou</title>
+    <meta name="description" content="site de vente de service et produit pour chien">
+    <meta name="keywords" content="vent garderie toutou chien garde-chien garde service" />
+    <meta name="author" content="UnicornStompers" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../assets/img/icone/unicorn-stomperz-logo.png">
+    <link href="../assets/css/inscription.css" rel="stylesheet">
+    <!-- cdn et police-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- import de css accueil-->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- import de css inconu -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+</head>
+
+<body data-spy="scroll" data-target="#primary-menu" data-offset="0" class="relative">
+
+<div w3-include-html="./menu.html"></div>
+
+<section class="latest-articles alternate-bg" id="profile-form">
+    <div class="container">
+        <h1>Mon espace personnel</h1>
+        <p>Mes animaux</p>
+        <div class="list-animaux row">
+            <div class="animal row col-md-6">
+                <div class="description-animal col-md-6">
+                    <img src="../assets/img/runnytoutou.jpeg">
+                </div>
+                <div class="description-animal col-md-6">
+                    <p>Nom : Swifty</p>
+                    <span class="animal-br">Sexe : F</span>
+                    <span class="animal-br">Poids : 12kg</span>
+                    <span class="animal-br">Race : Corgi géant</span>
+                </div>
+            </div>
+            <div class="animal row col-md-6">
+                <div class="description-animal col-md-6">
+                    <img src="../assets/img/dogultimate.jpeg">
+                </div>
+                <div class="description-animal col-md-6">
+                    <p>Nom : Foxy</p>
+                    <span class="animal-br">Sexe : M</span>
+                    <span class="animal-br">Poids : 9kg</span>
+                    <span class="animal-br">Race : Jack Russel</span>
+                </div>
+            </div>
+            <div class="animal row col-md-6">
+                <div class="description-animal col-md-6">
+                    <img src="../assets/img/toutouheinstein.jpeg">
+                </div>
+                <div class="description-animal col-md-6">
+                    <p>Nom : Study</p>
+                    <span class="animal-br">Sexe : M</span>
+                    <span class="animal-br">Poids : 5kg</span>
+                    <span class="animal-br">Race : Doge</span>
+                </div>
+            </div>
+            <div class="animal row col-md-6" id="addToutou">
+                <div class="description-animal void col-md-6">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+                <div class="description-animal col-md-6">
+                    <p>Inscrire mon animal</p>
+                </div>
+            </div>
+        </div>
+        <form method="POST" action="#" class="addToutou animated slideInRight" id="toutouForm">
+            <p>Inscrire mon toutou</p>
+            <label>Nom :</label>
+            <input type="text" placeholder="Le nom du chihuahua"/>
+            <label>Poids :</label>
+            <input type="text" placeholder="Son poids"/>
+            <label>Race</label>
+            <select>
+                <option>Berger Allemands</option>
+                <option>Bulldog</option>
+                <option>Corgi</option>
+                <option>Staff</option>
+            </select>
+            <label>Âge :</label>
+            <input type="number" min="0" max="120" placeholder="Son âge"/>
+            <input type="submit" value="Enregistrer" class="btn btn-primary">
+        </form>
+
+        <p>Mes garderies préférées</p>
+        <div id="garderies" class="row">
+            <div class="col-md-3">
+                <img src="../assets/img/garderie01.jpeg" alt="garderie01">
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <label>Adresse :</label>
+                    <span>12 rue de l'allouette</span>
+                </div>
+                <div>
+                    <label>Code Postal :</label>
+                    <span>75001</span>
+                </div>
+                <div>
+                    <label>Ville :</label>
+                    <span>Paris</span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <label>Valeurs et description :</label>
+                <span class="noAvatar">
+                            Ne laissez pas votre chien seul à la maison !
+                            Choisissez parmi une centaine de dog sitters dignes de confiance et à proximité,
+                            proposant des garderies de jour.
+                            Facilement et rapidement, trouvez une personne expérimentée pour garder votre chien.
+                    </span class="noAvatar">
+            </div>
+        </div>
+</section>
+<footer>
+    <a href="/page/cgu.html">CGU</a>
+    <a href="/page/faq.html"> FAQ</a>
+</footer>
+<script>
+    var addToutou = document.querySelector("#addToutou");
+    var showToutouForm = function() {
+        console.log("test");
+        var form = document.querySelector("#toutouForm");
+        form.style.display = "block";
+    }
+    addToutou.addEventListener("click", showToutouForm);
+</script>
+
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    }
+</script>
+<script>
+    includeHTML();
+</script>
