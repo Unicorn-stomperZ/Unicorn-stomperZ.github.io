@@ -3966,6 +3966,7 @@ footer .footer-nav ul.footer-secondary-nav li {
 }
 .header-nav-wrapper nav{
     padding: 0;
+    width: 100%;
 }
 .wp1{
     color: black;
@@ -4311,4 +4312,29 @@ ul.list-group li a:hover {
 }
 .content-panier {
     margin-top: 127px;
+}
+
+.entete{
+    width: 100%;
+    height: 100px;
+}
+
+.entete h1{
+    float: left;
+
+}
+
+.entete button{
+    margin-top: 1em;
+    float: right;
+    padding: 10px 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: ease .5s;
+    -moz-transition: ease .5s;
+    -ms-transition: ease .5s;
+    -o-transition: ease .5s;
+    transition: ease .5s;
+
 }
