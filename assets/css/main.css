@@ -4166,7 +4166,7 @@ footer .footer-nav ul.footer-secondary-nav li {
 */
 
 footer{
-    height: 50px;
+    height: 242px!important;
     background-color: black;
     padding: 1em;
 }
