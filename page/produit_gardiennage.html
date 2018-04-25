@@ -31,17 +31,17 @@
 
 <body>
 
-<section class="latest-articles alternate-bg" id="product-page">
+<section class="alternate-bg" id="product-page">
     <div class="container">
         <h1 class="product-title">Prestation gardiennage</h1>
 
         <div class="product-images">
             <ul>
                 <li class="product-image-main"><img src="//dummyimage.com/300x300"/></li>
-                <li><img src="//dummyimage.com/300x300"/></li>
-                <li><img src="//dummyimage.com/300x300"/></li>
-                <li><img src="//dummyimage.com/300x300"/></li>
-                <li><img src="//dummyimage.com/300x300"/></li>
+                <li><img class="imgdummy" src="//dummyimage.com/300x300"/></li>
+                <li><img class="imgdummy" src="//dummyimage.com/300x300"/></li>
+                <li><img class="imgdummy" src="//dummyimage.com/300x300"/></li>
+                <li><img class="imgdummy" src="//dummyimage.com/300x300"/></li>
             </ul>
         </div>
 
@@ -84,6 +84,64 @@
                 <img src="//dummyimage.com/200x200"/>
                 <p class="pack-element-title">Séance de massage canin</p>
                 <p><span class="pack-element-price-rated">50€</span> 40€ !</p>
+            </div>
+        </div>
+    
+        <div class="product-user-interaction">
+            <h1>La parole est à vous !</h1>
+            <div class="product-user-interaction-note">
+                <p>Vous n'avez pas acheté ce produit, vous ne pouvez pas le noter pour le moment.</p>
+                <div class='rating-stars'>
+                    <ul id='stars'>
+                        <li class='star' title='Poor' data-value='1'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Fair' data-value='2'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Good' data-value='3'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='Excellent' data-value='4'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                        <li class='star' title='WOW!!!' data-value='5'>
+                            <i class='fa fa-star fa-fw'></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="product-user-interaction-comment">
+                <div class="user-comment">
+                    <p><span>Utilisateur :</span> Marina P.</p>
+                    <p><span>Son animal :</span> Cookie, un corgi</p>
+                    <p><span>Le 24 Avril 2018</span></p>
+                    
+                    <p>En tant que propriétaire d'un mignon petit corgi, j'ai souvent des angoisses quand il faut le confier à quelqu'un que je ne connais pas.
+                    Les dresseurs de Toupourtoutou sont vraiments gentils et compétents ! Je n'ai plus peur !</p>
+                </div>
+                
+                <hr>
+                
+                <div class="user-comment">
+                    <p><span>Utilisateur :</span> Paul M.</p>
+                    <p><span>Son animal :</span> Poukave, un staff</p>
+                    <p><span>Le 18 Avril 2018</span></p>
+        
+                    <p>Poukave est si gentil, c'est pas de sa faute si il a bouffé le dog-sitter. Par chance, Toupourtoutou a été super réactif et a envoyé un autre dog-sitter pour nourrir Poukave !</p>
+                </div>
+                
+                <hr>
+                
+                <div class="user-comment">
+                    <p><span>Utilisateur :</span> Marina P.</p>
+                    <p><span>Son animal :</span> Cookie, un corgi</p>
+                    <p><span>Le 24 Avril 2018</span></p>
+        
+                    <p>En tant que propriétaire d'un mignon petit corgi, j'ai souvent des angoisses quand il faut le confier à quelqu'un que je ne connais pas.
+                        Les dresseurs de Toupourtoutou sont vraiments gentils et compétents ! Je n'ai plus peur !</p>
+                </div>
             </div>
         </div>
     </div>
@@ -144,6 +202,26 @@
                 return;
             }
         }
+    
+        /* 1. Visualizing things on Hover - See next part for action on click */
+        $('#stars li').on('mouseover', function(){
+            var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+        
+            // Now highlight all the stars that's not after the current hovered star
+            $(this).parent().children('li.star').each(function(e){
+                if (e < onStar) {
+                    $(this).addClass('hover');
+                }
+                else {
+                    $(this).removeClass('hover');
+                }
+            });
+        
+        }).on('mouseout', function(){
+            $(this).parent().children('li.star').each(function(e){
+                $(this).removeClass('hover');
+            });
+        });
     }
 </script>
 <script>
