@@ -195,7 +195,6 @@ $(document).ready(function() {
         var $user_comment = $('.user-comment-form textarea').val();
         
         if(typeof $($first_comment).val() !== 'undefined') {
-            console.log('ok');
             $($first_comment).prepend('' +
                 '<div class="user-comment">' +
                 '<p><span>Utilisateur :</span> Anonyme</p>' +
@@ -205,7 +204,6 @@ $(document).ready(function() {
                 '</div>' +
                 '<hr>');
         } else {
-            console.log('pas ok');
             $('.user-comment-form').before('' +
                 '<div class="user-comment">' +
                 '<p><span>Utilisateur :</span> Anonyme</p>' +
