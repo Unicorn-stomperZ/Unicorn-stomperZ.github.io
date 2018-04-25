@@ -96,3 +96,34 @@
     margin: 0;
     padding: 0;
 }
+.green-alert {
+    color: #109930;
+}
+
+.yellow-alert {
+    color: #FFBB00;
+}
+
+.red-alert {
+    color: #FF5050;
+}
+
+.stock-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.green-alert .stock-circle {
+    background: url('assets/img/green_circle.png') no-repeat center;
+}
+
+.yellow-alert .stock-circle {
+    background: url('assets/img/yellow_circle.svg') no-repeat center;
+}
+
+.red-alert .stock-circle {
+    background: url('assets/img/red_circle.png') no-repeat center;
+}
