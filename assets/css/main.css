@@ -4108,6 +4108,29 @@ footer .footer-nav ul.footer-secondary-nav li {
     font-weight: bold;
 }
 
+.user-comment-form {
+    width: 100%;
+}
+
+.user-comment-form p {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.user-comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+
+.user-comment-form input[type="submit"] {
+    display: block;
+    width: 200px;
+    margin: -20px auto 10px;
+    background-color: #00aced;
+    color: white;
+}
+
 /* Rating Star Widgets Style */
 .rating-stars ul {
     list-style-type:none;
