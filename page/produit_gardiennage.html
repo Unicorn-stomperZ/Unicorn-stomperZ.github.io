@@ -168,12 +168,12 @@
     window.jQuery || document.write('<script src="../../../assets/js/min/jquery-1.11.2.min.js"><\/script>')
 </script>
 <!-- JS Locals -->
-<script src="/assets/js/min/bootstrap.min.js"></script>
-<script src="/assets/js/min/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-<script src="/assets/js/min/retina.min.js"></script>
-<script src="/assets/js/min/jquery.waypoints.min.js"></script>
-<script src="/assets/js/min/flickity.pkgd.min.js"></script>
-<script src="/assets/js/scripts.js"></script>
+<script src="../assets/js/min/bootstrap.min.js"></script>
+<script src="../assets/js/min/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script src="../assets/js/min/retina.min.js"></script>
+<script src="../assets/js/min/jquery.waypoints.min.js"></script>
+<script src="../assets/js/min/flickity.pkgd.min.js"></script>
+<script src="../assets/js/scripts.js"></script>
 
 </body>
 
@@ -181,26 +181,26 @@
 
 <script src="../assets/js/includeHtml.js"></script>
 <script>
-        /* 1. Visualizing things on Hover - See next part for action on click */
-        $('#stars li').on('mouseover', function(){
-            var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+    /* 1. Visualizing things on Hover - See next part for action on click */
+    $('#stars li').on('mouseover', function(){
+        var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
         
-            // Now highlight all the stars that's not after the current hovered star
-            $(this).parent().children('li.star').each(function(e){
-                if (e < onStar) {
-                    $(this).addClass('hover');
-                }
-                else {
-                    $(this).removeClass('hover');
-                }
-            });
-        
-        }).on('mouseout', function(){
-            $(this).parent().children('li.star').each(function(e){
+        // Now highlight all the stars that's not after the current hovered star
+        $(this).parent().children('li.star').each(function(e){
+            if (e < onStar) {
+                $(this).addClass('hover');
+            }
+            else {
                 $(this).removeClass('hover');
-            });
+            }
         });
-    }
+        
+    }).on('mouseout', function(){
+        $(this).parent().children('li.star').each(function(e){
+            $(this).removeClass('hover');
+        });
+    });
+    
 </script>
 <script>
     includeHTML();
