@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Website CSS style -->
+    <link href="css/user_role_admin.css" rel="stylesheet">
+
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <title>Back office - Gestion des produits</title>
+</head>
+
+<body>
+<div class="container">
+
+    <h1> Liste des produits
+        <a href="addProduit.html" class="btn btn-primary btn-lg">
+        <a href="#" class="btn btn-primary btn-lg">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        </a>
+    </h1>
+    <table class="table table-bordered table-hover table-responsive">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Libellé</th>
+            <th>Prix</th>
+            <th>Qté</th>
+            <th>Disp.</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Massage pour chien</td>
+            <td>5,25€</td>
+            <td>154</td>
+            <td><input type="checkbox" checked></td>
+            <td><img src="img/toutoumassage.jpeg" width="112px" height="112px" ></td>
+            <td>
+                <a href="#" ><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+
+                <a href="editProduit.html?id=1" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                <a href="removeProduit.html?id=1" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Babbysitter pour chien</td>
+            <td>25,25€</td>
+            <td>4</td>
+            <td><input type="checkbox" checked></td>
+            <td><img src="img/toutousitter.jpeg" width="112px" height="112px" ></td>
+            <td>
+                <a href="#" ><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+
+                <a href="editProduit.html?id=2" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                <a href="removeProduit.html?id=2" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Massage pour chien</td>
+            <td>5,25€</td>
+            <td>154</td>
+            <td><input type="checkbox" checked></td>
+            <td><img src="img/toutoumassage.jpeg" width="112px" height="112px" ></td>
+            <td>
+                <a href="#" ><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                <a href="editProduit.html?id=3" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                <a href="removeProduit.html?id=3" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Massage pour chien</td>
+            <td>5,25€</td>
+            <td>154</td>
+            <td><input type="checkbox" checked></td>
+            <td><img src="img/toutoumassage.jpeg" width="112px" height="112px" ></td>
+            <td>
+                <a href="#" ><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                <a href="editProduit.html?id=4" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                <a href="removeProduit.html?id=4" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Massage pour chien</td>
+            <td>5,25€</td>
+            <td>154</td>
+            <td><input type="checkbox" checked></td>
+            <td><img src="img/toutoumassage.jpeg" width="112px" height="112px" ></td>
+            <td>
+                <a href="#" ><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+
+                <a href="editProduit.html?id=5" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                <a href="removeProduit.html?id=5" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Massage pour chien</td>
+            <td>5,25€</td>
+            <td>154</td>
+            <td><input type="checkbox" checked></td>
+            <td><img src="img/toutoumassage.jpeg" width="112px" height="112px" ></td>
+            <td>
+                <a href="#" ><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                <a href="editProduit.html?id=6" ><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                <a href="removeProduit.html?id=6" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
