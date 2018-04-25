@@ -35,7 +35,6 @@
     background-color: #00aced;
     color: white;
 }
-
 /*
 * Page produit
 */
@@ -80,7 +79,23 @@
     width: 100%;
     margin: 0;
 }
-
+.menu-backoffice{
+    text-align: center;
+}
+.menu-link-backoffice {
+    display: inline-block;
+    background-color: #00aced;
+    width: 16%;
+    padding: 25px 0;
+}
+.content-backoffice {
+    width: 70%;
+    margin: 50px auto;
+}
+.body-backoffice{
+    margin: 0;
+    padding: 0;
+}
 .green-alert {
     color: #109930;
 }
