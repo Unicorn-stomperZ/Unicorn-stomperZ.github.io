@@ -4200,7 +4200,16 @@ span.noAvatar {
     text-align: justify;
     display: block;
 }
-h1.titleCategory{
+.total_panier{
+    font-size: 33px;
+}
+.thumb_panier{
+    height: 75px;
+    width: 150px;
+}
+.logo_cash{
+    display: inline-block;
+}h1.titleCategory{
     margin-bottom: 1em;
 }
 
