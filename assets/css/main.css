@@ -3864,9 +3864,6 @@ footer .footer-nav ul.footer-secondary-nav li {
     }
 }
 
-body{
-    padding-top: 127px!important;
-}
 .color-black{
     color:#000000;
 }
@@ -4202,4 +4199,19 @@ span.noAvatar {
     padding-top: 15px;
     text-align: justify;
     display: block;
+}
+h1.titleCategory{
+    margin-bottom: 1em;
+}
+
+ul.list-group li a{
+    color: #33363B;
+    -webkit-transition: ease .75s;
+    -moz-transition: ease .75s ;
+    -ms-transition: ease .75s;
+    -o-transition: ease .75s;
+    transition: ease .75s;
+}
+ul.list-group li a:hover{
+    color: lime;
 }
